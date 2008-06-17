@@ -1,7 +1,7 @@
 %define module	IPC-Run
 %define name	perl-%{module}
 %define version 0.80
-%define release %mkrel 1
+%define release %mkrel 2
 %define _requires_exceptions Win32
 
 Name:		%{name}

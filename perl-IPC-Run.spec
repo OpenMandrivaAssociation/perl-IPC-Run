@@ -1,5 +1,5 @@
 %define upstream_name	 IPC-Run
-%define upstream_version 0.85
+%define upstream_version 0.86
 
 %define _requires_exceptions Win32
 

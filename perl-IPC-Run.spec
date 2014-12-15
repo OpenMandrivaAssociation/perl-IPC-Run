@@ -1,14 +1,14 @@
 %define modname	IPC-Run
-%define modver 0.92
+%define modver 0.93
 
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	5
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/IPC/IPC-Run-%{modver}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/IPC/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
@@ -34,7 +34,7 @@ rm -f lib/IPC/Run/Win32Helper.pm \
 sed -i -e '/Win32Helper.pm/d;/Win32IO.pm/d;/Win32Pump.pm/d' MANIFEST
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
@@ -47,5 +47,3 @@ sed -i -e '/Win32Helper.pm/d;/Win32IO.pm/d;/Win32Pump.pm/d' MANIFEST
 %doc Changes TODO eg
 %{perl_vendorlib}/IPC
 %{_mandir}/man3/*
-
-

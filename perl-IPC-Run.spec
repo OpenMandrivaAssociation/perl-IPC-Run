@@ -1,5 +1,5 @@
 %define modname	IPC-Run
-%define modver 0.93
+%define modver 0.94
 
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}

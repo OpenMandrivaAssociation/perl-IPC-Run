@@ -1,14 +1,16 @@
 %define modname	IPC-Run
-%define modver 0.93
+
+# Avoid nasty build dependency loop
+%define dont_gprintify 1
 
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	2
+Version:	0.97
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/IPC/%{modname}-%{modver}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/IPC-Run-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
@@ -22,7 +24,7 @@ Various redirection operators reminiscent of those seen on common Unix
 and DOS command lines are provided.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%setup -qn %{modname}-%{version}
 chmod 644 Changes
 chmod 755 eg/*
 perl -pi -e 's|^#!/usr/local/bin/perl|#!/usr/bin/perl|' eg/*
@@ -38,7 +40,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
-#%make test
+#make test
 
 %install
 %makeinstall_std

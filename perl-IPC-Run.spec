@@ -1,5 +1,5 @@
 %define modname	IPC-Run
-%define modver 0.97
+%define modver 20180523.0
 
 # Avoid nasty build dependency loop
 %define dont_gprintify 1
@@ -7,10 +7,10 @@
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{modname}
+Url:		http://metacpan.org/pod/IPC::Run
 Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/IPC-Run-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel

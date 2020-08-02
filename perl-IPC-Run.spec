@@ -43,6 +43,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 %make_install
 
 %files
-%doc TODO eg
+%doc eg
 %{perl_vendorlib}/IPC
 %{_mandir}/man3/*

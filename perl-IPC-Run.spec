@@ -1,5 +1,5 @@
 %define modname	IPC-Run
-%define modver 20180523.0
+%define modver 20200505.0
 
 # Avoid nasty build dependency loop
 %define dont_gprintify 1
@@ -38,13 +38,10 @@ sed -i -e '/Win32Helper.pm/d;/Win32IO.pm/d;/Win32Pump.pm/d' MANIFEST
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
-
-%check
-#make test
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes TODO eg

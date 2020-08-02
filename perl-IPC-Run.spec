@@ -26,7 +26,6 @@ and DOS command lines are provided.
 
 %prep
 %setup -qn %{modname}-%{modver}
-chmod 644 Changes
 chmod 755 eg/*
 perl -pi -e 's|^#!/usr/local/bin/perl|#!/usr/bin/perl|' eg/*
 
@@ -44,6 +43,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 %make_install
 
 %files
-%doc Changes TODO eg
+%doc TODO eg
 %{perl_vendorlib}/IPC
 %{_mandir}/man3/*

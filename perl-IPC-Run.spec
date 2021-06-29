@@ -7,7 +7,7 @@
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/IPC::Run
@@ -25,7 +25,7 @@ Various redirection operators reminiscent of those seen on common Unix
 and DOS command lines are provided.
 
 %prep
-%setup -qn %{modname}-%{modver}
+%autosetup -p1 -n %{modname}-%{modver}
 chmod 755 eg/*
 perl -pi -e 's|^#!/usr/local/bin/perl|#!/usr/bin/perl|' eg/*
 

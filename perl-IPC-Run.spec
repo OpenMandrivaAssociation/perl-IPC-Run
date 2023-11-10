@@ -5,8 +5,8 @@
 
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
-Version:	20220807.0
-Release:	3
+Version:	20231003.0
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/pod/IPC::Run

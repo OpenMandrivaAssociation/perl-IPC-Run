@@ -9,7 +9,7 @@ Version:	20231003.0
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/IPC::Run
+Url:		https://metacpan.org/pod/IPC::Run
 Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/IPC-Run-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel

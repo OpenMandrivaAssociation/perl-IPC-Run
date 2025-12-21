@@ -12,6 +12,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/IPC::Run
 Source0:	http://search.cpan.org/CPAN/authors/id/T/TO/TODDR/IPC-Run-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl-devel
 
 %description

@@ -5,8 +5,8 @@
 
 Summary:	%{modname} module for perl
 Name:		perl-%{modname}
-Version:	20231003.0
-Release:	2
+Version:	20260402.0
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/IPC::Run
@@ -25,7 +25,7 @@ Various redirection operators reminiscent of those seen on common Unix
 and DOS command lines are provided.
 
 %prep
-%autosetup -p1 -n %{modname}-%{version}
+%autosetup -p1 -n IPC-Run-20260402.0
 chmod 755 eg/*
 perl -pi -e 's|^#!/usr/local/bin/perl|#!/usr/bin/perl|' eg/*
 
